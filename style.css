@@ -31,12 +31,13 @@ nav{
     display: flex;
     list-style-type: none;
     gap: 30px;
-    color: #313F48;
-    font-size: 18px;
 }
 
-.text-menu{
+.text-menu a{
     padding: 0px 40px;
+    color: #313F48;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 .btn-menu{
@@ -293,11 +294,9 @@ footer{
     color: #313F48;
 }
 
-.s-footer{
+.s-footer a{
     color: #12548a;
     line-height: 1.5;
-    text-decoration: underline;
-
 }
 
 .f-link{
