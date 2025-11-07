@@ -1,0 +1,309 @@
+body{
+    background-color: #fbfbff;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair';
+}
+
+button{
+    text-transform: uppercase;
+}
+
+/* Menu */
+
+nav{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dbdbfa;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+}
+
+.logo{
+    height: 25px;
+    margin-left: 50px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    color: #313F48;
+    font-size: 18px;
+}
+
+.text-menu{
+    padding: 0px 40px;
+}
+
+.btn-menu{
+    width: 200px;
+    padding: 20px 10px;
+    background-color: #1A417C;
+    border: #1A417C;
+    color: #E6F0EF;
+    font-size: 16px;
+    border-radius: 55px;
+}
+
+/* Banner */
+
+.banner{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 50px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-banner-div{
+
+}
+
+.img-banner{
+    height: 500px;
+}
+
+.dir-banner{
+    width: 500px;
+    line-height: 50px;
+}
+
+.tit-banner{
+    font-size: 50px;
+    color: #313F48;
+    font-weight: 400;
+}
+
+.sub-banner{
+    color: #5A646C;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.btn-banner{
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    background-color: #00166F;
+    color: #E6F0EF;
+    font-size: 20px;
+    font-family: 'Playfair';
+    border-radius: 5px;
+    border: #00166F;
+}
+
+/* Seção Aderir / Comunicados*/
+.fundo-escuro{
+    background-color: #313F48;
+    padding: 20px 50px 50px 200px;
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.f-dir{
+    width: 30%;
+}
+
+.f-tit{
+    font-size: 40px;
+    font-family: 'Playfair';
+    color: #EAECED; 
+    margin-bottom: -5px;
+}
+
+.f-desc{
+    color: #EAECED;
+    font-weight: 100;
+    font-size: 20px; 
+    margin-bottom: 20px;
+}
+
+.f-btn{
+    width: 200px;
+    padding: 20px 10px;
+    background-color: #00166F;
+    color: #E6F0EF;
+    font-size: 20px;
+    border-radius: 5px;
+    border: #00166F;
+    margin-top: 30px;
+}
+
+/* Seção chat/atendimento */
+.seções{
+    padding: 20px 50px 50px 200px;
+    margin-left: 80px;
+}
+
+.se-caixas{
+    display: flex;
+        align-items: center;
+}
+
+.atendimento, .chat, .loren{
+    width: 500px;
+    align-items: center;
+}
+
+.atendimento, .loren{
+    margin-left: 100px;
+}
+
+.chat{
+    margin-right: 100px;
+    margin-left: 20%;
+}
+
+.btn-atend{
+    width: 200px;
+    padding: 10px 5px;
+    background-color: #00166F;
+    color: #E6F0EF;
+    font-size: 18px;
+    font-family: 'Playfair';
+    border-radius: 5px;
+    border: #00166F;
+    margin-top: 10px;
+}
+
+.divisor-dir{
+    background-color: rgba(128, 182, 177, 0.30);
+    box-sizing: border-box;
+    height: 1px;
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+.divisor-esq{
+    background-color: rgba(128, 182, 177, 0.30);
+    box-sizing: border-box;
+    height: 1px;
+    width: 75%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: -15%;
+}
+
+.t-secao{
+    font-size: 30px;
+    color: #313F48;
+    font-weight: 400;
+}
+
+.d-secao{
+    color: #313F48;
+    font-weight: 100;
+    font-size: 18px; 
+    margin-bottom: 20px;
+}
+
+/* Seção comunicados */
+
+.comunicados{
+    padding: 20px 50px 50px 200px;
+    background-color: #e4e4f17c;
+    margin-bottom: -20px;
+}
+
+.comunicados-caixas{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.c-tit{
+    font-size: 40px;
+    font-family: 'Playfair';
+    color: #313F48; 
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+.c-caixa{
+    width: 400px;
+    border: 1px #00166F dotted;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.c-subtit{
+    font-size: 30px;
+    color: #313F48;
+    font-weight: 400;
+}
+
+.c-text{
+    color: #313F48;
+    font-weight: 100;
+    font-size: 18px; 
+    margin-bottom: 20px;
+}
+
+.c-button {
+    width: 400px;
+    padding: 10px 5px;
+    background-color: #00166F;
+    color: #E6F0EF;
+    font-size: 18px;
+    font-family: 'Playfair';
+    border-radius: 5px;
+    border: #00166F;
+    margin-top: 10px;
+}
+
+/* Footer */
+
+footer{
+    padding: 0px 0px;
+    display: flex;
+    background-color: #dbdbfa;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.footer-logos{
+    display: flex;
+    gap: 50px;
+    color: #313F48;
+    margin-left: 50px;
+
+}
+
+.logos{
+    height: 25px;
+}
+
+.f-text{
+    color: #313F48;
+}
+
+.s-footer{
+    color: #12548a;
+    line-height: 1.5;
+    text-decoration: underline;
+
+}
+
+.f-link{
+
+}
+
+.f-lis-li{
+    list-style-type: none;
+}
