@@ -65,9 +65,17 @@ nav{
     width: 100%;
 }
 
+.img-logo-div{
+    width: 7vw;
+    height: 0.2vh;
+    margin-top: -2rem;
+}
+
 .logo{
-    height: 2rem;
+    width: 100%;
+    height: auto;
     margin-left: 3rem;
+    display: block;
 }
 
 .menu{
@@ -116,9 +124,16 @@ nav{
     margin-bottom: 1.5rem;
 }
 
+.img-banner-div{
+    width: 35rem;
+    height: auto;
+}
+
 .img-banner{
-    height: 30rem;
+    height: auto;
     margin-top: 2rem;
+    width: 100%;
+    
 }
 
 .dir-banner{
@@ -208,20 +223,32 @@ nav{
 .se-caixas{
     display: flex;
     align-items: center;
+    margin-left: 8vw;
+    gap: 2rem;
 }
 
-.atendimento, .chat, .loren{
+.atendimento, .loren{
     width: 32rem;
     align-items: center;
 }
 
-.atendimento, .loren{
-    margin-left: 6.2rem;
+.chat{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
 }
 
-.chat{
-    margin-right: 6.2rem;
-    margin-left: 18rem;
+.text-chat{
+    margin-right: 2rem;
+    margin-left: 8vw;
+    margin-bottom: 2rem;
+    width: 40%;
+}
+
+.img-chat{
+    width: 100%;
 }
 
 .btn-atend{
@@ -239,10 +266,10 @@ nav{
     background-color: rgba(128, 182, 177, 0.30);
     box-sizing: border-box;
     height: 1px;
-    width: 80%;
+    width: 75%;
     border-radius: 0.4rem;
     margin-bottom: 20px;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 .divisor-esq{
@@ -268,12 +295,31 @@ nav{
     margin-bottom: 1.1rem;
 }
 
+.img-secoes {
+    width: 20vw;
+    height: auto;
+    flex: 0 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+.img-secoes img,
+.img-chat {
+  width: 100%;
+  max-width: 260px; /* limite máximo pra não ficar gigante */
+  height: auto;
+  display: block;
+  border-radius: 50%; /* se quiser círculo */
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
 /* Seção comunicados */
 
 .comunicados{
     padding: 1rem 0.5rem 3rem 0.5rem;
     background-color: #e4e4f17c;
-    margin-bottom: -20px;
+    margin-bottom: -1.2px;
 }
 
 .comunicados-caixas{
@@ -297,15 +343,15 @@ nav{
     border: 1px #00166F dotted;
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0.4rem;
 }
 
 .c-caixa:hover{
-    box-shadow: #00166F 0px 4px 15px;
+    box-shadow: #00166F 0px 0.4rem 1rem;
 }
 
 .c-subtit{
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #313F48;
     font-weight: 400;
     margin-top: 0px;
@@ -375,4 +421,241 @@ footer a:focus{
 
 .f-lis-li{
     list-style-type: none;
+}
+
+/*Mobile*/
+
+@media(max-width: 600px){
+    /* Menu */
+    nav{
+        position: static;
+    }
+
+    .img-logo-div{
+        width: 10vw;
+    }
+
+    /* Banner */
+    .banner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img-banner-div{
+        width: 25rem;
+        height: auto;
+        margin-top: -3rem;
+    }
+
+    .dir-banner{
+        margin-left: 3rem;
+        width: 80%;
+    }
+
+    .tit-banner{
+        font-size: 3rem;
+        margin-top: -2.5rem;
+    }
+
+    .btn-banner{
+        width: 85%;
+    }
+
+    /* Seção Aderir / Comunicados*/
+    .fundo-escuro{
+        background-color: #00166F;
+        padding: 1rem;
+        gap: 0.2rem;
+        flex-wrap: wrap;
+    }
+
+    .f-dir{
+        width: 80%;
+        margin-left: 3rem;
+        text-align: center;
+    }
+
+    .f-btn{
+        width: 15rem;
+        padding: 1.2rem 0.5rem;
+        background-color: #c9cddd;
+        color: #00166F;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 0.4rem;
+        border: 1px solid #c9cddd;
+        margin-top: 0.5rem;
+    }
+
+    /* Seção chat/atendimento */
+    .seções{
+        padding-left: 5rem; 
+        padding-right: 1rem; 
+        width: 80%; 
+    }
+
+    .se-caixas{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .se-caixas .chat .text-chat { 
+        order: 2; 
+        width: 100%; 
+        padding: 0 1rem; 
+        text-align: center; 
+    }
+
+    .img-secoes img, .img-chat {
+        width: 80%;
+        height: auto;
+        margin-left: -150px;
+        border-radius: 50%;
+    }
+
+    .img-secoes{
+        margin-bottom: -20rem;
+    }
+    
+    .loren, .chat, .atendimento{
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+
+    .divisor-dir, .divisor-esq{
+        margin-bottom: 5%;
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 70%;
+    }
+
+    .img-secoes{
+        width: 50%;
+        height: auto;
+        margin-left: 8rem;
+        margin-bottom: -1rem;
+    }
+
+    .img-chat {
+        order: 1;
+        margin: 0 auto !important;
+        display: block;
+    }
+
+      .img-secoes img, .img-chat img {
+        width: 80% !important;
+        min-width: 15rem;
+        height: auto;
+        display: block;
+        align-items: center;
+  }
+
+    .chat {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .t-secao {
+        order: 2;
+        display: flex;
+        margin: 0 !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+        text-align: center !important;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        font-size: 2rem;
+    }
+
+    .chat .t-secao {
+        margin-left: -1.1rem !important;
+        padding-left: 0 !important;
+        padding-top: 1.3rem !important;
+    }
+
+    .d-secao {
+        order: 3; 
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .btn-atend{
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* Seção comunicados */
+
+    .comunicados-caixas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .c-tit{
+        font-size: 2rem;
+    }
+
+    .c-caixa{
+        width: 20rem;
+    }
+
+    .c-subtit{
+        font-size: 1.5rem;
+    }
+
+    .c-text{
+        font-size: 1rem; 
+    }
+
+    .c-button {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0rem;
+        margin: 0 !important;
+    }
+
+    .footer-logos{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .f-text{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    ul{
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        text-align: center;
+        margin-bottom: 10px !important;
+    }
+
+    .f-lis-li{
+        padding-top: 0.2rem;
+        padding-bottom: 0.4rem !important;
+        text-align: center;
+    }
+
 }
